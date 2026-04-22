@@ -29,7 +29,7 @@ Custom loading screen with logo animation
 **⚙️ Setup Instructions**
 
 Clone the repository:
-git clone https://github.com/your-username/frontend-assignment.git
+git clone https://github.com/PavanKakinada-Dev/Frontend.git
 Open the project folder
 Run index.html in browser
 
