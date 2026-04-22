@@ -2,8 +2,9 @@
  Implementing a design using HTML, CSS, and JavaScript.
 
  Frontend Assignment
-
-[Add your deployed link here]
+ 
+Live URL
+https://github.com/PavanKakinada-Dev/Frontend.git
 
 ** Project Overview**
 
