@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Details</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="page-loader">
+  <img src="assets/images/Logo.svg" alt="logo">
+</div>
+
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo"><img src="assets/images/Logo.svg" alt="logo"></div>
+    <nav>
+      <a href="index.html">OUR TEAM</a>
+      <a class="active">PERSONAL DETAILS</a>
+      <a href="ContactUs.html">CONTACT US</a>
+    </nav>
+  </div>
+</header>
+
+<div class="left-tab">
+  <a href="index.html">
+    <h1>Our Team</h1>
+  </a>
+</div>
+
+<div class="right-tabs">
+  <a href="PersonalDetals.html" class="tab pink">
+    <h1>Personal Details</h1>
+  </a>
+  <a href="ContactUs.html" class="tab orange">
+    <h1>Contact Us</h1>
+  </a>
+</div>
+
+<section class="form-section">
+  <div class="container">
+
+    <h1>Personal Details</h1>
+
+    <form class="form-box">
+
+     <div class="input-group">
+        <i class="fa fa-user"></i>
+            <input 
+                type="text" 
+                placeholder="Enter Your Name"
+                pattern="[A-Za-z ]+"
+                title="Only alphabets allowed"
+                required
+                oninput="this.value = this.value.replace(/[^A-Za-z ]/g, '')"
+                >
+    </div>
+
+<div class="input-group phone-group">
+    <i class="fa fa-phone"></i>
+
+    <div class="phone-wrapper">
+        <!-- Country Code Dropdown -->
+        <select name="country_code" class="country-code">
+            <option value="+91" selected>+91 (IN)</option>
+            <option value="+1">+1 (US)</option>
+            <option value="+44">+44 (UK)</option>
+            <option value="+61">+61 (AU)</option>
+        </select>
+
+        <!-- Phone Number Input -->
+        <input 
+            type="text" 
+            name="phone"
+            placeholder="Enter 10-digit Number"
+            maxlength="10"
+            pattern="[0-9]{10}"
+            required
+            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,10);"
+        >
+    </div>
+</div>
+
+      <textarea placeholder="Enter Your Address"></textarea>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>We've got one planet—let's treat it right.</p>
+    <p>© 2024 Company Name</p>
+    <div class="footer-links">
+      <a>Privacy Policy</a>
+      <a>Terms & Conditions</a>
+    </div>
+  </div>
+</footer>
+<script src="js/transition.js"></script>
+</body>
+</html>
