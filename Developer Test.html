@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Developer Test</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+ rel="stylesheet" />
+ <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&display=swap" 
+ rel="stylesheet" />
+ <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+ <!-- Header -->
+ <header class="site-header">
+ <div class="container header-inner">
+ <img src="assets/images/Logo.svg">
+ <nav class="main-nav">
+ <a href="#" class="nav-link active" data-page="team">OUR TEAM</a>
+ <a href="#" class="nav-link" data-page="personal">PERSONAL DETAILS</a>
+ <a href="#" class="nav-link" data-page="contact">CONTACT US</a>
+ </nav>
+ </div>
+ </header>
+
+ <!-- Side Tabs (left) -->
+ <aside class="side-tabs side-tabs--left" id="leftTabs"></aside>
+
+ <!-- Side Tabs (right) -->
+ <aside class="side-tabs side-tabs--right" id="rightTabs"></aside>
+
+ <main class="page-wrap">
+ <!-- OUR TEAM -->
+ <section class="page page-team active" id="page-team">
+ <div class="container">
+ <h1 class="page-title page-title--dark">Our Team</h1>
+ <div class="team-intro">
+ <p>
+ We believe that great ideas come to life through collaboration and innovation. Our team is a
+ diverse
+ group of passionate professionals, each bringing unique skills and experiences to the table.
+ From
+ creative designers to technical experts and problem-solvers, we are united by a
+ shared vision of delivering excellence in everything we do.
+ </p>
+ <p>
+ Our mission is to empower businesses and individuals by creating innovative, sustainable, and
+ user-friendly designs. With a culture that values integrity, growth, and teamwork, we are
+ committed to creating meaningful solutions that make a difference. Whether it's crafting
+ cutting-edge designs, developing user-centered interfaces, or building sustainable solutions,
+ our team thrives on turning challenges into opportunities.
+ </p>
+ </div>
+
+ <div class="team-grid">
+ <article class="team-card">
+ <div class="team-photo">
+ <img src="assets/images/p1.jpg"
+ alt="Meredith Allen" />
+ </div>
+ <div class="team-info">
+ <h3>Meredith Allen</h3>
+ <p>CEO</p>
+ </div>
+ </article>
+
+ <article class="team-card">
+ <div class="team-photo">
+ <img src="assets/images/p2.jpg"
+ alt="Thomas Woodward" />
+ </div>
+ <div class="team-info">
+ <h3>Thomas Woodward</h3>
+ <p>COO</p>
+ </div>
+ </article>
+
+ <article class="team-card">
+ <div class="team-photo">
+ <img src="assets/images/p3.jpg"
+ alt="Wade Barton" />
+ </div>
+ <div class="team-info">
+ <h3>Wade Barton</h3>
+ <p>Business Analyst</p>
+ </div>
+ </article>
+
+ <article class="team-card">
+ <div class="team-photo">
+ <img src="assets/images/p4.jpg"
+ alt="Yahir Marquez" />
+ </div>
+ <div class="team-info">
+ <h3>Yahir Marquez</h3>
+ <p>Marketing Executive</p>
+ </div>
+ </article>
+
+ <article class="team-card">
+ <div class="team-photo">
+ <img src="assets/images/p5.jpg"
+ alt="Yahir Marquez" />
+ </div>
+ <div class="team-info">
+ <h3>Vera Rodgers </h3>
+ <p>Lead Designer</p>
+ </div>
+ </article>
+
+</div>
+ </div>
+ </section>
+
+ <!-- PERSONAL DETAILS -->
+ <section class="page page-personal" id="page-personal">
+ <div class="container">
+ <h1 class="page-title page-title--light">Personal Details</h1>
+ <form class="personal-form" id="personalForm" novalidate>
+ <div class="field">
+ <span class="field-icon" aria-hidden="true">
+ <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+ <path
+ d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5Z" />
+ </svg>
+ </span>
+ <input type="text" name="name" placeholder="Enter Your Name" required />
+ </div>
+ <p class="field-error" id="nameError"></p>
+ <div class="field field--phone">
+ <span class="field-icon" aria-hidden="true">
+ <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+ <path
+ d="M6.6 10.8a15.05 15.05 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1Z" />
+ </svg>
+ </span>
+ <select name="countryCode" class="country-code" aria-label="Country code">
+ <option value="+91">+91 (IN)</option>
+ <option value="+1">+1 (US)</option>
+ <option value="+44">+44 (UK)</option>
+ <option value="+61">+61 (AU)</option>
+ <option value="+971">+971 (AE)</option>
+ <option value="+65">+65 (SG)</option>
+ <option value="+81">+81 (JP)</option>
+ <option value="+86">+86 (CN)</option>
+ <option value="+49">+49 (DE)</option>
+ <option value="+33">+33 (FR)</option>
+ </select>
+ <input type="tel" name="mobile" id="mobileInput" placeholder="Enter Your Mobile Number" required
+ inputmode="numeric" pattern="[0-9]{6,15}" maxlength="15" autocomplete="tel-national" />
+ </div>
+ <p class="field-error" id="mobileError" role="alert"></p>
+ <div class="field field--textarea">
+ <textarea name="address" placeholder="Enter Your Address" rows="4"></textarea>
+ </div>
+ <p class="field-error" id="addressError"></p>
+ <div class="form-actions">
+ <button type="button" class="btn btn-edit" id="editBtn">Edit</button>
+ <button type="submit" class="btn btn-save" id="saveBtn">Save</button>
+ </div>
+ </form>
+ </div>
+ </section>
+
+ <!-- CONTACT US -->
+ <section class="page page-contact" id="page-contact">
+ <div class="container">
+ <h1 class="page-title page-title--light">Contact Us</h1>
+ <p class="contact-text">
+ We are a team of engineers, communication experts and innovators who specialise in developing
+ technology propositions for the world around us. We noticed
+ that in an overwhelming number of use cases, technology was not really the problem; mistrust came
+ from how it was deployed by creators and then
+ understood and used by consumers.
+ </p>
+ </div>
+ </section>
+ </main>
+
+ <!-- Footer -->
+ <footer class="site-footer">
+ <div class="container footer-inner">
+ <p class="footer-tag">We've got one planet—let's treat it right.</p>
+ <p class="footer-copy">&copy; 2024 company name</p>
+ <p class="footer-links">
+ <a href="#">Privacy Policy</a>
+ <a href="#">Terms &amp; Conditions</a>
+ </p>
+ </div>
+ </footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
