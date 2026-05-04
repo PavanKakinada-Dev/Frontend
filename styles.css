@@ -37,7 +37,7 @@ body {
 
 .container {
  width: 100%;
- max-width: 1100px;
+ max-width: 1450px;
  margin: 0 auto;
  padding: 0 15px;
 }
@@ -591,4 +591,8 @@ body {
 .page {
   padding-left: 100px;
   padding-right: 100px;
+}
+body {
+  transform: scale(0.9);
+  transform-origin: top center;
 }
